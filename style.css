@@ -1,0 +1,239 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font:inherit;
+}
+
+img, svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  :root {
+    --main-container-color:hsl(213, 19%, 18%);
+    --main-heading-color: hsl(0, 0%, 100%);
+    --main-paragraph-color: hsl(216, 12%, 54%);
+    --option-background-color: hsl(217, 12%, 63%);
+    --button-backgroung-color: hsl(25, 97%, 53%);   
+} 
+
+  body {
+    height: 100vh;
+    font-size: 15px;
+    font-family: "Overpass", sans-serif;
+    background-color: hsl(216, 12%, 8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-container {
+    background-color: var(--main-container-color);
+    text-align: center;
+    width: 90%;
+    padding: 5%;
+    border-radius: 3vw;
+}
+
+#icon-star {
+    width: 4vw;
+}
+
+#background-icon-star{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 100%, .05);
+    border-radius: 50%;
+    margin-left: 2.5%;
+    padding: 2%;
+    width: 13%;
+    aspect-ratio: 1/1;
+}
+
+#thank-icon {
+    padding: 2%;
+    display: none;
+}
+
+#changable-para {
+    color: hsl(25, 97%, 53%, .8);
+    background-color: hsl(0, 0%, 100%, .05);
+    padding: 2.5% 1%;
+    margin: 5% 22% 8% 22%;
+    border-radius: 5vw;
+    font-size: 3.8vw;
+    display: none;
+}
+
+.main-heading {
+    color: var(--main-heading-color);
+    font-size: 6.8vw;
+    font-weight: 700;
+    text-align: left;
+    padding-left: 1.6%;
+    margin: 5% 0;
+    font-family: "Overpass", sans-serif;
+}
+
+#heading2 {
+    display: none;
+    text-align: center;
+}
+
+.main-para {
+    color: hsl(216, 12%, 54%);
+    padding-left: 1.6%;
+    text-align: left;
+    font-weight: 400;
+    margin-bottom: 10%;
+    line-height: 6vw;
+    font-size: 4vw;
+    font-family: "Overpass", sans-serif;
+    font-weight: 400;
+}
+
+#para2 {
+   display: none;
+   text-align: center;
+   margin-bottom: 7%;
+}
+
+.radio-input {
+    display: none;
+}
+
+.radio-label {
+    color: hsl(216, 12%, 54%);
+    padding: 4%;
+    margin: 4.1%;
+    font-size: 4vw;
+    font-weight: 700;
+}
+
+
+.label-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 100%, .05);
+    border-radius: 50%;
+    width: 15%;
+    aspect-ratio: 1/1;
+}
+
+
+
+.label-container:hover {
+    background-color: var(--button-backgroung-color);
+    cursor: pointer;
+    .radio-label {
+        color: var(--main-heading-color);
+        cursor: pointer;
+        
+    }
+}
+
+.options-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    background-color: var(--button-backgroung-color);
+    color: var(--main-heading-color);
+    text-transform: uppercase;
+    letter-spacing: 1vw;
+    font-size: 3.8vw;
+    padding: 5% 36%;
+    border-radius: 7vw;
+    border-style: solid;
+    border-color: var(--body-color);
+    margin-top: 9%;
+    margin-bottom: 5%;
+    font-weight: 400;
+    border-width: .1vw;
+    border-color: hsl(216, 12%, 8%);
+}
+
+.button:hover {
+    background-color: var(--main-heading-color);
+    color: var(--button-backgroung-color); 
+    cursor: pointer;
+}
+
+#option1:checked {
+    #div-option1 {
+        background-color: rgb(0, 255, 55);
+    }
+}
+
+
+@media screen and (min-width:600px) {
+    #main-container {
+        width: 32%;
+        border-radius: 2.2vw;
+        padding: 1.70%;
+    }
+
+    #icon-star {
+        width: 1.5vw;
+    }
+
+    #background-icon-star{
+        margin-left: 2%;
+    }
+
+    .main-heading {
+        font-size: 2.28vw;
+        padding-left: 1.6%;
+        margin: 8% 0 3% 0;
+    }
+
+    .main-para {
+        padding-left: 1.6%;
+        margin-bottom: 8%;
+        line-height: 1.9vw;
+        font-size: 1.18vw;
+        font-weight: 700;
+    }
+
+    .radio-label {
+        padding: 4%;
+        margin: 4.1%;
+        font-size: 1.5vw;
+    }
+    
+    
+    .label-container {
+        border-radius: 50%;
+        width: 15%;
+        aspect-ratio: 1/1;
+    }
+
+    .button {
+        letter-spacing: .3vw;
+        font-size: 1.3vw;
+        padding: 3.7% 38%;
+        border-radius: 5vw;
+        margin-top: 11%;
+        margin-bottom: 3%;
+        border-width: .2vw;
+    }
+
+    #changable-para {
+        font-size: 1.25vw;
+    }
+
+    #para2 {
+        padding-left: 0;
+        padding: .5vw;
+        
+     }
+
+
+}
+
+
+
